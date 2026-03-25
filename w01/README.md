@@ -3,18 +3,24 @@
 ## 環境資訊
 - Host OS：Windows 11
 - VM 名稱：TKUVCT_411631269
-- Ubuntu 版本：（貼上 `lsb_release -a` 輸出）
-- Docker 版本：（貼上 `sudo docker --version` 輸出）
-- Docker Compose 版本：（貼上 `docker compose version` 輸出）
+- Ubuntu 版本：
+```
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.4 LTS
+Release:	24.04
+Codename:	noble
+```
+- Docker 版本：sudo docker --version
+- Docker Compose 版本：Docker Compose version v5.1.1
 
 ## VM 資源配置驗證
 
 | 項目 | VMware 設定值 | VM 內命令 | VM 內輸出 |
 |---|---|---|---|
-| CPU | 2 vCPU | `lscpu \| grep "^CPU(s)"` | （填入） |
-| 記憶體 | 4 GB | `free -h \| grep Mem` | （填入） |
-| 磁碟 | 40 GB | `df -h /` | （填入） |
-| Hypervisor | VMware | `lscpu \| grep Hypervisor` | （填入） |
+| CPU | 2 vCPU | `lscpu \| grep "^CPU(s)"` | CPU(s):2|
+| 記憶體 | 4 GB | `free -h \| grep Mem` |Mem:7.7Gi 1.9Gi 2.8Gi 43Mi 3.2Gi  5.8Gi  |
+| 磁碟 | 40 GB | `df -h /` |/dev/sda2    59G   11G   46G  19% /|
+| Hypervisor | VMware | `lscpu \| grep Hypervisor` | Hypervisor vendor = VMware|
 
 ## 四層驗收證據
 - [ ] ① Repository：`cat /etc/apt/sources.list.d/docker.list` 輸出
