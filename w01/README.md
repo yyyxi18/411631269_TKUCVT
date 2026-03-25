@@ -73,6 +73,8 @@ security features and capabilities please refer to
 - [ ] alpine：`sudo docker run -it --rm alpine /bin/sh` 內部命令與輸出
 `/ # `
 - [ ] 映像列表：`sudo docker images` 輸出
+<img width="1214" height="187" alt="image" src="https://github.com/user-attachments/assets/a5c85a66-6c05-4207-838f-1a999d037603" />
+
 
 ## Snapshot 清單
 
