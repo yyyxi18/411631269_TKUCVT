@@ -1,8 +1,8 @@
 # W01｜虛擬化概論、環境建置與 Snapshot 機制
 
 ## 環境資訊
-- Host OS：（例：Windows 11 / macOS 14）
-- VM 名稱：（例：vct-w01-41012345）
+- Host OS：Windows 11
+- VM 名稱：vct-w01-411631269
 - Ubuntu 版本：（貼上 `lsb_release -a` 輸出）
 - Docker 版本：（貼上 `sudo docker --version` 輸出）
 - Docker Compose 版本：（貼上 `docker compose version` 輸出）
