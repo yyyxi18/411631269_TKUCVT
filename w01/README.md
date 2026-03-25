@@ -24,10 +24,19 @@ Codename:	noble
 
 ## 四層驗收證據
 - [ ] ① Repository：`cat /etc/apt/sources.list.d/docker.list` 輸出
+<img width="1207" height="241" alt="image" src="https://github.com/user-attachments/assets/240ccf8a-19b4-4ff2-8f37-4eba063856c0" />
+
 - [ ] ② Engine：`dpkg -l | grep docker-ce` 輸出
+<img width="1221" height="299" alt="image" src="https://github.com/user-attachments/assets/81279508-a9df-4a57-b8af-de3d7f255d34" />
+
 - [ ] ③ Daemon：`sudo systemctl status docker` 顯示 active
+<img width="1222" height="765" alt="image" src="https://github.com/user-attachments/assets/1891fef8-e881-4206-940e-c399d5ecc4bb" />
+
 - [ ] ④ 端到端：`sudo docker run hello-world` 成功輸出
+<img width="966" height="603" alt="image" src="https://github.com/user-attachments/assets/4e9ca13f-f6d6-4656-85c0-965a252ae5b7" />
+
 - [ ] Compose：`docker compose version` 可執行
+<img width="608" height="58" alt="image" src="https://github.com/user-attachments/assets/6b68a2b4-0c39-42ce-9eaa-903963a4fba8" />
 
 ## 容器操作紀錄
 - [ ] nginx：`sudo docker run -d -p 8080:80 nginx` + `curl localhost:8080` 輸出
