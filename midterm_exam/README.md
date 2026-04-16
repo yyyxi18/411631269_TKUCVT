@@ -86,16 +86,20 @@ curl -I http://192.168.8.129:8080
   ```
   sudo ip link set ens33 down
   ```
+  
 - 故障前：
   ```
   ping 192.168.8.129
   ssh app
- ```
-- 故障中：
-<img width="1179" height="268" alt="image" src="https://github.com/user-attachments/assets/11597e4f-6bf0-4b61-9a81-cf8ba3f942ba" />
-- 回復後：
-<img width="1167" height="144" alt="image" src="https://github.com/user-attachments/assets/d87551f6-aff8-43f9-a824-ed11a9a82164" />
-- 診斷推論：網卡關閉導致封包無法傳輸，ping 與 ssh 均失敗，屬於 L2/L3 網路層問題，而非防火牆或服務層。
+  ```
+  
+ - 故障中：
+    <img width="1179" height="268" alt="image" src="https://github.com/user-attachments/assets/11597e4f-6bf0-4b61-9a81-cf8ba3f942ba" />
+
+ - 回復後：
+    <img width="1167" height="144" alt="image" src="https://github.com/user-attachments/assets/d87551f6-aff8-43f9-a824-ed11a9a82164" />
+
+ - 診斷推論：網卡關閉導致封包無法傳輸，ping 與 ssh 均失敗，屬於 L2/L3 網路層問題，而非防火牆或服務層。
 
 ### 症狀辨識（若選 F1+F2 必答）
 兩個都 timeout，我怎麼分？
